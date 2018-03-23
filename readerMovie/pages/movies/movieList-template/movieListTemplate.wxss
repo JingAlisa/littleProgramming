@@ -1,0 +1,37 @@
+@import "../movie-template/movieTemplate.wxss";
+.movieListContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin:0rpx 0 20rpx 0;
+}
+.movieListHeader{
+  display: flex;
+  flex-direction: row;
+  height: 28rpx;
+  line-height: 28rpx;
+  /* margin-top:20rpx; */
+   /* margin:20rpx auto;  */
+   justify-content: space-between; 
+   font-size:25rpx;
+   margin-top: 10rpx;
+}
+.movieListTitle{
+     margin-left:35rpx;   
+}
+.headerRight{
+  /* display: flex;
+  flex: row;
+  position:absolute;
+  right:10rpx; */
+}
+.headerRight image{
+  width:25rpx;
+  height: 25rpx;
+  margin:0 20rpx;
+}
+.movieListContent{
+  display: flex;
+  flex-direction: row;
+  margin:0 auto;
+}

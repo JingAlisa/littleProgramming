@@ -1,0 +1,20 @@
+<view class="container">
+  <image src="{{isPlaying?'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000':myData.imgContent}}" class="content-img"></image>
+  <image catchtap='onPlayMusic' src="{{isPlaying?'/images/first.jpg':'/images/second.jpg'}}" class="play"></image>
+  <view class="aboutAuthor">
+    <image src="{{myData.imgAuthor}}" class="author-img"></image>
+    <text class="author-name">{{myData.author}}</text>
+    <text class="pubText">发表于</text>
+    <text class="pubDate">{{myData.pubTime}}</text>
+  </view>
+  <text class="title">{{myData.title}}</text>
+  <view class="action">
+    <view class="favor-share">
+      <image wx:if="{{collected}}" catchtap='onCollectionTap'  src="/images/forth.jpg" class="favor-img"></image>
+      <image wx:else src="/images/first.jpg" catchtap='onCollectionTap'  class="favor-img"></image>
+      <image catchtap='onShareTap' src="/images/second.jpg" class="shar-img"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+  <text class="content">{{myData.detail}}</text>
+</view>

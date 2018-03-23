@@ -1,0 +1,19 @@
+<import src="post_item_template/post_template.wxml" />
+<view>
+  <swiper catchtap='onCatchTap' indicator-dots="true" indicator-active-color='blue' autoplay='true' current='1' interval='5000' circular='true'>
+    <swiper-item>
+      <image src="/images/first.jpg" id="0"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/second.jpg" id="1"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/first.jpg" id="0"></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{mainData}}" wx:for-item="item">
+    <view catchtap="detail" data-id="{{item.id}}">
+      <template is="post_template" data="{{...item}}" />
+    </view>
+  </block>
+</view>

@@ -1,0 +1,66 @@
+<!--pages/movies/movie_detail/movieDetail.wxml-->
+<import src="../star-template/starTemplate.wxml" />
+<view class="detailContainer">
+  <view class="header">
+    <image class="titleImage" src="{{titleImage}}" mode='aspectFill'></image>
+    <view class="headcontent">
+      <text class="title">{{title}}</text>
+      <view class="countryYear">
+        <text>{{country}}.</text>
+        <text>{{year}}</text>
+      </view>
+      <view class="likeComment">
+        <text>喜欢：{{like}}</text>
+        <text>评论：{{comment}}</text>
+      </view>
+    </view>
+    <image class="littleImage" src="{{titleImage}}"></image>
+  </view>
+
+  <view class="middle">
+    <text class="subTitle">{{originalTitle}}</text>
+    <view class="score">
+      <text class="scoreTitle">评分</text>
+      <view class="stars">
+        <template is="starTemplate" data="{{score:score,stars:stars}}"></template>
+      </view>
+    </view>
+    <view class="directors">
+      <text>导演</text>
+      <block wx:for="{{directors}}" wx:for-item="item">
+        <text class="eachItem">{{item}}/</text>
+      </block>
+    </view>
+    <view class='moviestars'>
+      <text>影人</text>
+      <block wx:for="{{movieStars}}" wx:for-item="item">
+        <text class="eachItem">{{item.name}}/</text>
+      </block>
+    </view>
+    <view class="movieType">
+      <text>类型</text>
+      <block wx:for="{{movieType}}" wx:for-item="item">
+        <text class="eachItem">{{item}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="summary">
+    <text class="summaryTitle">剧情简介</text>
+    <text>{{summary}}</text>
+  </view>
+  <view class="line"></view>
+  <view class="starsImage">
+    <text class="starsTitle">影人</text>
+    <scroll-view scroll-x style="width:100%;">
+      <view class="floatClass">
+        <block wx:for="{{movieStars}}" wx-for-item="item">
+          <view class="starsDetail">
+            <image src="{{item.image}}"></image>
+            <text>{{item.name}}</text>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+.starContainer{
+  display:flex;
+  flex: row;
+}
+.star{
+  display: flex;
+  flex: row;
+  height: 22rpx;
+}
+.star image{
+  width:22rpx;
+  height:22rpx;
+}
+.score{
+  font-size: 18rpx;
+  height: 22rpx;
+  line-height: 22rpx;
+}

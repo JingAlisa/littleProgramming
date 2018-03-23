@@ -1,0 +1,23 @@
+<import src="movieList-template/movieListTemplate.wxml" />
+<import src="movieGrid_template/movieGridTemplate.wxml" />
+<view class="search">
+  <icon class="searchIcon" type="search" size="25"></icon>
+  <input class="searchInput" type='text' placeholder='芳华、妖猫传' placeholder-class='holdWords' bindblur='onSearchChange' />
+  <icon catchtap='closeSearch' class='cancelIcon' type="clear" size='20' wx:if="{{cancelIcon}}"></icon>
+</view>
+
+<view clss="container" wx:if="{{movieContainer}}">
+  <view class="partMovie">
+    <template is="movieListTemplate" data="{{...inTheater}}"></template>
+  </view>
+  <view class="partMovie">
+    <template is="movieListTemplate" data="{{...comingSoon}}"></template>
+  </view>
+  <view class="partMovie">
+    <template is="movieListTemplate" data="{{...top250}}"></template>
+  </view>
+</view>
+
+<view wx:if="{{searchResult}}">
+  <template is="movieGridTemplate" data="{{...search}}"></template>
+</view>

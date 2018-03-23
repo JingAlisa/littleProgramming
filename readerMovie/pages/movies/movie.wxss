@@ -1,0 +1,32 @@
+@import "movieList-template/movieListTemplate.wxss";
+@import "movieGrid_template/movieGridTemplate.wxss";
+page{
+  background: #eee;
+}
+.container{
+  display: flex;
+  flex:column;
+  background-color: red;
+}
+.partMovie{
+  margin-bottom:30rpx;
+}
+.search{
+  display:flex;
+  flex-direction: row;
+  height:80rpx;
+  width:100%;
+  margin:30rpx 0 0 30rpx;
+}
+.searchIcon{
+  margin-right:40rpx;
+}
+.holdWords{
+  font-size:16px;
+  color:#666;
+}
+.cancelIcon{
+  position:absolute;
+  right:30rpx;
+
+}

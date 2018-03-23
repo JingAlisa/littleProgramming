@@ -1,0 +1,83 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.content-img{
+  width:100%;
+  height:412rpx;
+  margin-bottom:20px;
+}
+.aboutAuthor{
+  display: flex;
+  flex-direction:row;
+  height:80rpx;
+  line-height:80rpx;
+  margin-left:30rpx;
+}
+.author-img{
+  width:62rpx;
+  height:62rpx;
+  border-radius:50%;
+  margin:auto 10rpx;
+}
+.author-name{
+  font-size:28rpx;
+  color:#666;
+  margin:auto 10rpx;
+}
+.pubText{
+  font-size:24rpx;
+  color:#999;
+}
+.pubDate{
+  font-size:24rpx;
+  color:#999;
+}
+.title{
+  font-size:32rpx;
+  color:#333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:30rpx;
+}
+.action{
+  margin-right:30rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  margin-left:30rpx;
+}
+.favor-share{
+  float:right;
+}
+.favor-share image{
+  width:80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  margin-right:30rpx;
+}
+.line{
+  margin-top:50rpx;
+  margin-left:30rpx;
+  margin-right:60rpx;
+  height:1px;
+  width:100%;
+  background-color:#e5e5e5;
+  position:relative;
+  z-index:-99;
+}
+.content{
+  margin-left:30rpx;
+  color:#333;
+}
+.play{
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+  position:absolute;
+  left: 50%;
+  top:156rpx;
+  margin-left:-51rpx;
+  opacity:0.6;
+
+}
